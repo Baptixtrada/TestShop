@@ -1,8 +1,8 @@
 using TestShop.Domain.Common;
 
-namespace TestShop.Domain.Shop{
+namespace TestShop.Domain.Clients{
 
-public class Shop : IEntity
+    public class Client : IEntity
     {
         public int Id { get; set; }
 

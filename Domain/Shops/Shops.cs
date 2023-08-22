@@ -1,13 +1,11 @@
 using TestShop.Domain.Common;
 
-namespace TestShop.Domain.Product{
+namespace TestShop.Domain.Shops{
 
-    public class Product : IEntity
+public class Shop : IEntity
     {
         public int Id { get; set; }
 
         public string? Name { get; set; }
-        public decimal Price { get; set; }
-
     }
 }
