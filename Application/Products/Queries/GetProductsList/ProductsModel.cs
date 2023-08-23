@@ -1,4 +1,4 @@
-namespace TestShop.Application.Product.Queries.GetProductsList{
+namespace TestShop.Application.Products.Queries.GetProductsList{
 
     public class ProductModel
     {

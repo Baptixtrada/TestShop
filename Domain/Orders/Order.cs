@@ -1,10 +1,11 @@
 ﻿using TestShop.Domain.Common;
 using TestShop.Domain.Customers;
+using TestShop.Domain.Payments;
 using TestShop.Domain.Products;
 
 namespace TestShop.Domain.Orders
 {
-    public class Oder : IEntity
+    public class Order : IEntity
     {
         private int _quantity;
         private decimal _totalPrice;
@@ -15,6 +16,8 @@ namespace TestShop.Domain.Orders
         public DateTime Date { get; set; }
 
         public Customer? Customer { get; set; }
+
+        public Payment? Payment { get ; set ; }
         
         public Product? Product { get; set; }
 
