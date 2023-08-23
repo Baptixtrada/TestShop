@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using TestShop.Domain.Common;
-using TestShop.Domain.Clients;
+﻿using TestShop.Domain.Common;
+using TestShop.Domain.Customers;
 using TestShop.Domain.Products;
 
-namespace TestShop.Domain.Sales
+namespace TestShop.Domain.Orders
 {
-    public class Sale : IEntity
+    public class Oder : IEntity
     {
         private int _quantity;
         private decimal _totalPrice;
@@ -16,7 +14,7 @@ namespace TestShop.Domain.Sales
 
         public DateTime Date { get; set; }
 
-        public Client? Client { get; set; }
+        public Customer? Customer { get; set; }
         
         public Product? Product { get; set; }
 
