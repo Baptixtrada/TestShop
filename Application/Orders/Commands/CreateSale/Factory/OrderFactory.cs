@@ -10,7 +10,7 @@ namespace TestShop.Application.Orders.Commands.CreateOrder.Factory{
             var order = new Order();
             order.Date = date;
             order.Customer = customer;
-            order.UnitPrice = order.Product.Price;
+            order.UnitPrice = order.Product!.Price;
             order.Quantity = quantity;
             return order;
         }
