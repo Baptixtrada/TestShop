@@ -1,0 +1,7 @@
+c:\Users\BaptisteGrosjean\Source\repos\TestShop\obj\Debug\net7.0\TestShop.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\BaptisteGrosjean\Source\repos\TestShop\obj\Debug\net7.0\TestShop.AssemblyInfoInputs.cache
+c:\Users\BaptisteGrosjean\Source\repos\TestShop\obj\Debug\net7.0\TestShop.AssemblyInfo.cs
+c:\Users\BaptisteGrosjean\Source\repos\TestShop\obj\Debug\net7.0\TestShop.csproj.CoreCompileInputs.cache
+c:\Users\BaptisteGrosjean\Source\repos\TestShop\obj\Debug\net7.0\TestShop.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\BaptisteGrosjean\Source\repos\TestShop\obj\Debug\net7.0\TestShop.RazorAssemblyInfo.cache
+c:\Users\BaptisteGrosjean\Source\repos\TestShop\obj\Debug\net7.0\TestShop.RazorAssemblyInfo.cs
