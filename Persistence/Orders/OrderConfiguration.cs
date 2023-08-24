@@ -1,3 +1,4 @@
+using System.Data.Entity.ModelConfiguration;
 using TestShop.Domain.Orders;
 
 namespace TestShop.Persistence.Orders
@@ -15,6 +16,7 @@ namespace TestShop.Persistence.Orders
             HasRequired(p => p.Customer);
 
             HasRequired(p => p.Product);
+            HasRequired(p=> p.Payment);
 
             Property(p => p.TotalPrice)
                 .IsRequired()
