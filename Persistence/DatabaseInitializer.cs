@@ -1,7 +1,9 @@
 using System.Data.Entity;
 using TestShop.Domain.Customers;
 using TestShop.Domain.Orders;
+using TestShop.Domain.Payments;
 using TestShop.Domain.Products;
+using TestShop.Domain.Shops;
 
 namespace TestShop.Persistence
 {
@@ -17,8 +19,21 @@ namespace TestShop.Persistence
         private void CreateCustomers(DatabaseService database)
         {
             database.Customers.Add(new Customer() { Name = "Baptiste Grosjean" });
-            database.Customers.Add(new Customer() { Name = "Timmy Gilissen" };
+            database.Customers.Add(new Customer() { Name = "Timmy Gilissen" });
             database.Customers.Add(new Customer() { Name = "Stijn Compernolle" });
+            database.SaveChanges();
+        }
+        private void CreateShops(DatabaseService database)
+        {
+            database.Shops.Add(new Shop() { Name = "Turkish Bakery" });
+            database.Shops.Add(new Shop() { Name = "Xtrada s kitchen" });
+            database.Shops.Add(new Shop() { Name = "Colruyt" });
+            database.SaveChanges();
+        }
+        private void CreatePayments(DatabaseService database)
+        {
+            database.Payments.Add(new Payment() { Name = "Cash" });
+            database.Payments.Add(new Payment() { Name = "Visa" });
             database.SaveChanges();
         }
         private void CreateProducts(DatabaseService database)
