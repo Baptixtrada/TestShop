@@ -1,3 +1,4 @@
+using System.Data.Entity.ModelConfiguration;
 using TestShop.Domain.Customers;
 
 namespace TestShop.Persistence.Customers{
@@ -5,7 +6,7 @@ namespace TestShop.Persistence.Customers{
     {
         public CustomerConfiguration(){
             HasKey(p=> p.Id);
-            PropertyAccessors(p=> p.Name).IsRequired().HasMaxLength(50);
+            Property(p=> p.Name).IsRequired().HasMaxLength(50);
         }
     }
 }
