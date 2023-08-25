@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CleanArchitecture.Common.Dates
+namespace TestShop.Common.Dates
 {
     public class DateService : IDateService
     {
