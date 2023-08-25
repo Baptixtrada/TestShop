@@ -18,9 +18,9 @@ namespace TestShop.Persistence
         }
         private void CreateCustomers(DatabaseService database)
         {
-            database.Customers.Add(new Customer() { Name = "Baptiste Grosjean" });
-            database.Customers.Add(new Customer() { Name = "Timmy Gilissen" });
-            database.Customers.Add(new Customer() { Name = "Stijn Compernolle" });
+            database.Customers.Add(new Domain.Customers.Customer() { Name = "Baptiste Grosjean" });
+            database.Customers.Add(new Domain.Customers.Customer() { Name = "Timmy Gilissen" });
+            database.Customers.Add(new Domain.Customers.Customer() { Name = "Stijn Compernolle" });
             database.SaveChanges();
         }
         private void CreateShops(DatabaseService database)
@@ -52,7 +52,7 @@ namespace TestShop.Persistence
 
             var products = database.Products.ToList();
 
-            database.Orders.Add(new Order()
+            database.Orders.Add(new Domain.Orders.Order()
             {
                 Date = DateTime.Now.Date.AddDays(-3),
                 Customer = customers[0],
@@ -61,7 +61,7 @@ namespace TestShop.Persistence
                 Quantity = 1
             });
 
-            database.Orders.Add(new Order()
+            database.Orders.Add(new Domain.Orders.Order()
             {
                 Date = DateTime.Now.Date.AddDays(-2),
                 Customer = customers[1],
@@ -70,7 +70,7 @@ namespace TestShop.Persistence
                 Quantity = 2
             });
 
-            database.Orders.Add(new Order()
+            database.Orders.Add(new Domain.Orders.Order()
             {
                 Date = DateTime.Now.Date.AddDays(-1),
                 Customer = customers[2],

@@ -15,12 +15,13 @@ namespace TestShop.Persistence
 {
     public class DatabaseService : DbContext, IDatabaseService
     {
-        public required ISet<Customer> Customers { get; set; }
-        public required ISet<Order> Orders { get; set; }
-        public required ISet<Payment> Payments { get; set; }
-        public required ISet<Product> Products { get; set; }
-        public required ISet<Shop> Shops { get; set; }
-        public DatabaseService() : base("TestShop"){
+        public ISet<Domain.Customers.Customer> Customers { get; set; }
+        public ISet<Domain.Orders.Order> Orders { get; set; }
+        public ISet<Payment> Payments { get; set; }
+        public ISet<Product> Products { get; set; }
+        public ISet<Shop> Shops { get; set; }
+        public DatabaseService() : base("TestShop")
+        {
             Database.SetInitializer( new DatabaseInitializer());
         }
         public void Save()

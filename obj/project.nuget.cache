@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S0kJUModIsbJsnv7JNicaxvlPRTN1Ei1nb3hL+sN8nGDK7KbKkjv463iHGRoXrRjPq6XZ6S+MyWejLSsdSniWg==",
+  "dgSpecHash": "ch3h2YB9SAQyOKg7NdCWjs/z7F90NNxOWLW+Ia4OBL+12/Y6h0hd1QykSV6ieWEzlJ2u/oSowy95kQsCjw88UQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BaptisteGrosjean\\Source\\repos\\TestShop\\TestShop.csproj",
+  "projectFilePath": "c:\\Users\\BaptisteGrosjean\\Source\\repos\\TestShop\\TestShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BaptisteGrosjean\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\BaptisteGrosjean\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

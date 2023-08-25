@@ -8,8 +8,8 @@ namespace TestShop.Application.Interfaces
 {
     public interface IDatabaseService
     {
-        ISet<Customer> Customers { get; set; }
-        ISet<Order> Orders { get; set; }
+        ISet<Domain.Customers.Customer> Customers { get; set; }
+        ISet<Domain.Orders.Order> Orders { get; set; }
         ISet<Payment> Payments{get;set;}
         ISet<Product> Products { get; set; }
         ISet<Shop> Shops{get;set;}

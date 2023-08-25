@@ -4,7 +4,7 @@ using TestShop.Domain.Products;
 
 namespace TestShop.Application.Orders.Commands.CreateOrder.Factory{
     public interface IOrderFactory{
-        Order Create(DateTime date, Customer customer, Product product, int quantity);
+        Domain.Orders.Order Create(DateTime date, Domain.Customers.Customer customer, Product product, int quantity);
         
     }
 }

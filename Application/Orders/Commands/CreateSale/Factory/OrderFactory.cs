@@ -5,9 +5,9 @@ using TestShop.Domain.Products;
 namespace TestShop.Application.Orders.Commands.CreateOrder.Factory{
     public class OrderFactory : IOrderFactory
     {
-        public Order Create(DateTime date, Customer customer, Product product, int quantity)
+        public Domain.Orders.Order Create(DateTime date, Domain.Customers.Customer customer, Product product, int quantity)
         {
-            var order = new Order();
+            var order = new Domain.Orders.Order();
             order.Date = date;
             order.Customer = customer;
             order.UnitPrice = order.Product!.Price;

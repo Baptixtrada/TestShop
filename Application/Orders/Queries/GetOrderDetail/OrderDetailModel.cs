@@ -4,8 +4,8 @@ namespace TestShop.Application.Orders.Queries.GetOrderDetail
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
-        public required string CustomerName { get; set; }
-        public required string ProductName { get; set; }
+        public string? CustomerName { get; set; }
+        public string? ProductName { get; set; }
 
         public decimal UnitPrice { get; set; }
 
